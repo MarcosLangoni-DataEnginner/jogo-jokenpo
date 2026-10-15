@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>✊ Jogo de Jokenpô ✋</h1>
+        <p class="subtitulo">Pedra, papel ou tesoura?</p>
+
+        <section class="jogo">
+            <h2>Escolha sua jogada</h2>
+
+            <div class="opcoes">
+                <button class="opcao" data-escolha="pedra">
+                    ✊ Pedra
+                </button>
+
+                <button class="opcao" data-escolha="papel">
+                    ✋ Papel
+                </button>
+
+                <button class="opcao" data-escolha="tesoura">
+                    ✌️ Tesoura
+                </button>
+            </div>
+
+            <div class="resultado" aria-live="polite">
+                <p id="jogada-jogador">Sua jogada: -</p>
+                <p id="jogada-computador">Jogada do computador: -</p>
+                <h2 id="mensagem">Faça sua escolha!</h2>
+            </div>
+
+            <div class="placar">
+                <p>Vitórias: <span id="vitorias">0</span></p>
+                <p>Derrotas: <span id="derrotas">0</span></p>
+                <p>Empates: <span id="empates">0</span></p>
+            </div>
+
+            <button id="reiniciar">🔄 Reiniciar jogo</button>
+        </section>
+
+        <p class="rodape">Desenvolvido com HTML, CSS e JavaScript</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

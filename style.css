@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.subtitulo {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.jogo {
+    background: #ffffff;
+    color: #1e293b;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.jogo h2 {
+    margin-bottom: 22px;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.opcao {
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.25s, background 0.25s;
+}
+
+.opcao:hover {
+    background: #1d4ed8;
+    transform: translateY(-5px) scale(1.04);
+}
+
+.opcao:active {
+    transform: scale(0.95);
+}
+
+.resultado {
+    background: #f1f5f9;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+.resultado p {
+    margin: 10px 0;
+}
+
+#mensagem {
+    color: #2563eb;
+    margin-top: 18px;
+    animation: aparecer 0.5s ease;
+}
+
+.placar {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.placar p {
+    background: #e2e8f0;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#reiniciar {
+    background: #dc2626;
+    color: #ffffff;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.25s;
+}
+
+#reiniciar:hover {
+    background: #b91c1c;
+    transform: scale(1.05);
+}
+
+.rodape {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    margin-top: 25px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .jogo {
+        padding: 20px;
+    }
+
+    .opcao {
+        padding: 13px;
+    }
+}
